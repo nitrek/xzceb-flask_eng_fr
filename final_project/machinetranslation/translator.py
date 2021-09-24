@@ -42,3 +42,6 @@ def french_to_english(french_text):
     return english_text
 #print("English-to-french : "+english_to_french("Hello, how are you today?"))
 #print("French-to-English : "+french_to_english("Bonjour, comment vous êtes aujourd'hui?"))
+
+
+#ibmcloud target --cf-api https://api.eu-gb.cf.cloud.ibm.com -r eu-gb -o theniteshsingh@gmail.com

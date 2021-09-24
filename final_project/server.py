@@ -3,22 +3,22 @@ from machinetranslation import translator
 
 app = Flask("Web Translator")
 
-@app.route("/englishToFrench ")
+@app.route("/english_to_french")
 def english_to_french():
     """
     translate english to french
     """
-    text_to_translate = request.args.get('textToTranslate')
-    return translator.english_to_french(text_to_translate)
+    textToTranslate = request.args.get('textToTranslate')
+    return translator.english_to_french(textToTranslate)
 
 
-@app.route("/frenchToEnglish")
+@app.route("/french_to_english")
 def french_to_english():
     """
     translate  french to english
     """
-    text_to_translate = request.args.get('textToTranslate')
-    return translator.french_to_english(text_to_translate)
+    textToTranslate = request.args.get('textToTranslate')
+    return translator.french_to_english(textToTranslate)
 
 @app.route("/")
 def render_index_page():
